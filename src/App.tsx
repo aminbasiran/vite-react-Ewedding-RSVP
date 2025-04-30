@@ -4,6 +4,7 @@ import { ReactLenis } from 'lenis/react'
 import Gallery from './components/Gallery'
 import RSVP from './components/RSVP'
 import Guestbook from './components/Guestbook'
+import Footer from './components/Footer'
 
 function App() {
 
@@ -21,7 +22,7 @@ function App() {
       <Guestbook />
         <RSVP />
         {/* <Doa/> */}
-      
+      <Footer/>
       </ReactLenis>
     
   )
