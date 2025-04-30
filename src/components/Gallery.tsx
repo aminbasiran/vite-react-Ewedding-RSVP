@@ -25,11 +25,11 @@ const Gallery = () => {
   return (
     <div ref={containerRef} className="w-full h-[900vh] relative">
       <div className="sticky w-full top-0 h-screen flex flex-col justify-evenly items-center-safe">
-        <div className=' text-center w-[calc(100%-3rem)] text-secondary text-shadow-xs '>
+        <div className=' text-center w-[calc(100%-3rem)] text-secondary text-shadow-xs slide-right '>
           <h1><i><q>Life's a dance you learn as you go, sometimes you lead sometimes you follow, don't worry about what you don't know.</q></i></h1>
           <p><i>- John Michael Montgomery</i></p>
         </div>
-        <div className='w-full flex-col flex justify-center-safe items-center-safe gap-3'>
+        <div className='w-full flex-col flex justify-center-safe items-center-safe gap-3 fade-in'>
           <h1 className='text-[#542102] font-bold text-xl tracking-tighter'>Galeri</h1>
           <div className="relative w-full h-[400px] overflow-hidden">
             {images.map((src, i) => {
@@ -62,7 +62,7 @@ const Gallery = () => {
             </div>
             <h1 className='text-[#542102] font-bold text-xl tracking-tighter'>Moments throughout the years</h1>
         </div>
-        <div className='text-center w-[calc(100%-2rem)] text-secondary text-shadow-xs '>
+        <div className='text-center w-[calc(100%-2rem)] text-secondary text-shadow-xs fade-in '>
           <h1 ><i><q>Love recognizes no barriers. It jumps hurdles, leaps fences, penetrates walls to arrive at its destination full of hope.</q></i></h1>
           <p><i>- Maya Angelou</i></p>
         </div>

@@ -33,10 +33,10 @@ const wishes = [
 const Guestbook = () => {
   return (
         <div className='w-full h-screen flex flex-col justify-center-safe items-center-safe text-center text-shadow-xs'>
-          <h1 className="text-6xl font-bold tracking-tighter pb-10">Guestbook</h1>
+          <h1 className="text-6xl font-bold tracking-tighter pb-10 fade-in">Guestbook</h1>
           <div className='p-5 w-full flex flex-col justify-center-safe items-center-safe gap-10'>
               {wishes.map((wish, index) => (
-                    <div key={index}>
+                    <div key={index} className="fade-in">
                         <h1><i>{wish.wish}</i></h1>
                         <h3>- {wish.author}</h3>  
                     </div>

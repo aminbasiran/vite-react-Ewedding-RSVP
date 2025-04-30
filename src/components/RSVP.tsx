@@ -37,20 +37,20 @@ const RSVP = () => {
     
   return (
     //   <div className='w-full h-screen flex flex-col justify-evenly items-center-safe p-4 bg-cover' style={{ backgroundImage: `url(${textured})` }}>
-      <div className='w-full h-screen flex flex-col justify-evenly items-center-safe p-4'>
-          <div className="flex flex-col justify-center-safe items-center-safe text-center gap-2">
-            <h1 className="text-7xl font-bold tracking-tighter pb-10">RSVP</h1>
+      <div className='w-full h-screen flex flex-col justify-evenly items-center-safe p-4 text-center'>
+          <div className="w-full flex flex-col justify-center-safe items-center-safe gap-3">
+            <h1 className="text-7xl font-bold tracking-tighter pb-10 fade-in ">RSVP</h1>
                 
-            <div className="flex flex-row justify-center-safe items-center-safe font-Gwendolyn text-5xl gap-2  font-[700]">
-                <h1>Mirza</h1>
+            <div className="w-full flex flex-row justify-center-safe items-center-safe font-Gwendolyn text-secondary gap-2 text-5xl font-[700] fade-in">
+                <h1 >Mirza</h1>
                     {/* <img src="./images/roses.png" alt="rose" className="w-30 aspect-square"/> */}
-                    <h3>+</h3>
-                <h1>Hasya</h1>
+                    <h3> +</h3>
+                <h1 >Hasya</h1>
             </div>
           
-            <h2 className="text-center opacity-40 text-xs">* Sila RSVP sebelum 30 November 2025</h2>
+            <h2 className="text-center opacity-40 text-xs fade-in">* Sila RSVP sebelum 30 November 2025</h2>
           </div>
-            <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col w-full gap-4">
+            <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col w-full gap-4 fade-in">
                 <div className="flex flex-col justify-center-safe items-center-safe"> 
                     <input
                     placeholder="Nama:"

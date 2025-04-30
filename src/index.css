@@ -69,7 +69,7 @@ body {
 .fade-in {
   animation: fade-in-animation ease-in-out;
   animation-timeline: view();
-  animation-range: cover 0% cover 50%;
+  animation-range: cover 0% cover 30%;
 }
 
 
@@ -85,17 +85,24 @@ body {
 
 @keyframes slide-right-animation { 
   0% { transform: translateX(-150%); }
-  20%, 100% { transform: translateX(0); }
+  20%{ transform: translateX(0); }
 }
 
 @keyframes slide-left-animation { 
-  0% { transform: translateX(150%); }
-  20%, 100% { transform: translateX(0); }
+  0% { transform: translateX(400%); }
+  20%{ transform: translateX(0); }
 }
 
 @keyframes fade-in-animation {
-  0% { opacity: 0; }  
-  5% { scale: 1; }
+  0% { 
+    opacity: 0;
+    scale: 0.65;
+  }  
+  100% { 
+    scale: 1;
+    scale: 1;
+   }
+  /* 100% { opacity: 0; }   */
   
 }
 
