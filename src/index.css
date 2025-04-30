@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Gwendolyn:wght@400;700&display=swap');
+
+@import "tailwindcss";
+
+@theme {
+  --font-Gwendolyn: 'Gwendolyn', sans-serif;
+  --color-primary : var(--primary);
+  --color-secondary : var(--secondary);
+}
+
+.debug{
+  @apply border-2 border-yellow-500
+}
+
+
+:root {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  line-height: 1.5;
+  /* font-weight: 700; */
+  
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+
+  color-scheme: light dark;
+  color: rgb(0, 0, 0);
+  background-color: var(--primary);
+  
+  /* Light Mode */
+  --primary: #fffdf8;
+  --secondary: #b2a396;
+  --light-text: rgb(0, 0, 0);
+  --light-background: #ffffff;
+
+
+  /* Dark Mode */
+  --dark-text: rgb(255, 255, 255);
+  --dark-background: #000000;
+
+}
+
+html {
+  overflow: scroll;
+  overflow-x: hidden;
+}  
+
+::-webkit-scrollbar {
+  width: 0;  /* Remove scrollbar space */
+  background: transparent;  /* Optional: just make scrollbar invisible */
+}
+
+
+body {
+  margin: 0;
+  width: 100%;
+  height: auto;
+}
+
+#root {
+  /* overflow: hidden; */
+  width: 100%;
+  height: auto;
+  padding : 15px
+}  
+    
+
+.fade-in {
+  animation: fade-in-animation ease-in-out;
+  animation-timeline: view();
+  animation-range: cover 0% cover 50%;
+}
+
+
+.slide-right {
+  animation: slide-right-animation 0.1s ease-in-out;
+  animation-timeline: view();
+}
+
+.slide-left {
+  animation: slide-left-animation 0.1s ease-in-out;
+  animation-timeline: view();
+}
+
+@keyframes slide-right-animation { 
+  0% { transform: translateX(-150%); }
+  20%, 100% { transform: translateX(0); }
+}
+
+@keyframes slide-left-animation { 
+  0% { transform: translateX(150%); }
+  20%, 100% { transform: translateX(0); }
+}
+
+@keyframes fade-in-animation {
+  0% { opacity: 0; }  
+  5% { scale: 1; }
+  
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    color: var(--dark-text);
+    background-color: var(--dark-background)
+  }
+}
+
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+}
+
+.float {
+  animation: float 5s ease-in-out infinite;
+}
